@@ -4,6 +4,8 @@
 
 **Nama:** Febryvia Deya Nur Havidtar Murti Aqsa
 
+**NIM:** 312510194
+
 **Kelas:** I251B
 
 **Program Studi:** Teknik Informatika
@@ -73,34 +75,34 @@ File `biodata.html` menggabungkan semantic structure, tabel data, form, validasi
 ![alt text](<biodata mini 2.png>)
 ![alt text](<biodata mini 3.png>)
 
-## Jawaban Pertanyaan
+**Jawaban Pertanyaan**
 
-**1. Apa fungsi `<table>`, `<tr>`, `<th>`, dan `<td>`?**
-`<table>` membuat struktur tabel, `<tr>` membuat baris, `<th>` membuat sel header (judul kolom/baris), dan `<td>` membuat sel data.
+**1. Apa fungsi <table>, <tr>, <th>, dan <td>?**
+<table> membuat struktur tabel, <tr> membuat baris, <th> membuat sel header (judul kolom/baris), dan <td> membuat sel data. Tabel juga bisa dikelompokkan dengan <thead> (bagian kepala), <tbody> (bagian isi), dan <tfoot> (bagian kaki), serta diberi judul dengan <caption>.
 
-**2. Apa perbedaan `<th>` dan `<td>`?**
-`<th>` adalah sel header yang secara default tampil tebal dan rata tengah serta bermakna sebagai judul kolom/baris. `<td>` adalah sel data biasa yang berisi isi tabel.
+**2. Apa perbedaan <th> dan <td>?**
+<th> adalah sel header yang secara default tampil tebal dan rata tengah serta bermakna sebagai judul kolom/baris. <td> adalah sel data biasa yang berisi isi tabel.
 
-**3. Apa fungsi `colspan` pada tabel?**
-`colspan` menggabungkan beberapa kolom menjadi satu sel. Contoh `colspan="2"` membuat sel membentang selebar dua kolom.
+**3. Apa fungsi colspan pada tabel?**
+colspan menggabungkan beberapa kolom menjadi satu sel. Contoh colspan="2" membuat sel membentang selebar dua kolom, seperti pada baris "Rata-rata" di <tfoot> praktikum ini. Pasangannya adalah rowspan, yang menggabungkan beberapa baris menjadi satu sel.
 
-**4. Apa fungsi `<form>` dalam HTML?**
-`<form>` adalah wadah untuk elemen input yang menerima data dari pengguna dan mengirimkannya ke server (atau ke proses lain) saat tombol submit ditekan.
+**4. Apa fungsi <form> dalam HTML?**
+<form> adalah wadah untuk elemen input yang menerima data dari pengguna dan mengirimkannya ke server (atau ke proses lain) saat tombol submit ditekan. Atribut pentingnya adalah action (tujuan pengiriman data) dan method (GET atau POST). Data hanya ikut terkirim jika input memiliki atribut name.
 
 **5. Apa perbedaan radio button dan checkbox?**
-Radio button hanya memungkinkan satu pilihan dari satu grup (`name` sama), sedangkan checkbox memungkinkan memilih satu, beberapa, atau tidak sama sekali.
+Radio button hanya memungkinkan satu pilihan dari satu grup (atribut name sama), sedangkan checkbox memungkinkan memilih satu, beberapa, atau tidak sama sekali. Pada praktikum ini radio button dipakai untuk jenis kelamin, sedangkan checkbox dipakai untuk keahlian (HTML, CSS, JavaScript).
 
-**6. Mengapa `<label>` sebaiknya terhubung dengan id input melalui atribut `for`?**
+**6. Mengapa <label> sebaiknya terhubung dengan id input melalui atribut for?**
 Agar label terkait dengan input-nya: mengklik label langsung memfokuskan input (atau mencentang checkbox/radio), area klik jadi lebih luas, dan pembaca layar (screen reader) bisa membacakan label yang tepat sehingga lebih aksesibel.
 
-**7. Apa perbedaan `<textarea>` dengan input type text?**
-`<input type="text">` untuk teks satu baris pendek, sedangkan `<textarea>` untuk teks panjang multi-baris dengan ukuran diatur lewat `rows` dan `cols`. `<textarea>` punya tag penutup, sedangkan `<input>` tidak.
+**7. Apa perbedaan <textarea> dengan input type text?**
+<input type="text"> untuk teks satu baris pendek, sedangkan <textarea> untuk teks panjang multi-baris dengan ukuran diatur lewat rows dan cols. <textarea> punya tag penutup, sedangkan <input> tidak.
 
-**8. Apa fungsi semantic HTML seperti `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, dan `<footer>`?**
-Elemen-elemen ini memberi makna pada struktur halaman: `<header>` kepala halaman/bagian, `<nav>` navigasi, `<main>` konten utama, `<section>` kelompok konten, `<article>` konten mandiri, `<aside>` konten pelengkap, dan `<footer>` kaki halaman. Manfaatnya: kode lebih mudah dibaca, lebih baik untuk SEO dan aksesibilitas, serta lebih mudah dipelihara.
+**8. Apa fungsi semantic HTML seperti <header>, <nav>, <main>, <section>, <article>, <aside>, dan <footer>?**
+Elemen-elemen ini memberi makna pada struktur halaman: <header> kepala halaman/bagian, <nav> navigasi, <main> konten utama, <section> kelompok konten, <article> konten mandiri, <aside> konten pelengkap, dan <footer> kaki halaman. Berbeda dengan <div> dan <span> yang tidak memiliki makna, elemen semantic menjelaskan peran tiap bagian halaman. Manfaatnya: kode lebih mudah dibaca, lebih baik untuk SEO dan aksesibilitas, serta lebih mudah dipelihara.
 
-**9. Apa fungsi `required`, `min`, `max`, dan `minlength`?**
-`required` mewajibkan input diisi, `min` dan `max` menentukan nilai minimum dan maksimum (untuk angka/tanggal), dan `minlength` menentukan jumlah karakter minimum pada input teks.
+**9. Apa fungsi required, min, max, minlength, maxlength, dan pattern?**
+required mewajibkan input diisi. min dan max menentukan nilai minimum dan maksimum (untuk input angka atau tanggal). minlength dan maxlength menentukan jumlah karakter minimum dan maksimum pada input teks. pattern membatasi isian dengan aturan tertentu (regular expression), misalnya pattern="[0-9]{8}" agar NIM hanya berisi 8 digit angka.
 
-**10. Apa perbedaan elemen `<audio>` dan `<video>`?**
-`<audio>` menampilkan pemutar suara saja (tanpa gambar), sedangkan `<video>` menampilkan gambar bergerak beserta suara, dan bisa diatur ukurannya (`width`, `height`) serta memiliki area tampilan visual.
+**10. Apa perbedaan elemen <audio> dan <video>?**
+<audio> menampilkan pemutar suara saja (tanpa gambar), sedangkan <video> menampilkan gambar bergerak beserta suara, dan ukurannya bisa diatur (width, height). Keduanya memakai atribut controls untuk menampilkan tombol putar dan <source> untuk menentukan file beserta formatnya, serta menyediakan teks cadangan jika browser tidak mendukung. Khusus <video>, ada atribut poster untuk gambar sampul. Atribut autoplay dan loop juga bisa dipakai pada keduanya.

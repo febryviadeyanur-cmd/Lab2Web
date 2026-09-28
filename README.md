@@ -75,34 +75,34 @@ File `biodata.html` menggabungkan semantic structure, tabel data, form, validasi
 ![alt text](<biodata mini 2.png>)
 ![alt text](<biodata mini 3.png>)
 
-**Jawaban Pertanyaan**
+### Jawaban Pertanyaan
 
-**1. Apa fungsi <table>, <tr>, <th>, dan <td>?**
-Jawaban: <table> membuat struktur tabel, <tr> membuat baris, <th> membuat sel header (judul kolom/baris), dan <td> membuat sel data. Tabel juga bisa dikelompokkan dengan <thead> (bagian kepala), <tbody> (bagian isi), dan <tfoot> (bagian kaki), serta diberi judul dengan <caption>.
+**1. Apa fungsi `<table>`, `<tr>`, `<th>`, dan `<td>`?**
+**Jawaban:** `<table>` digunakan untuk membuat tabel, `<tr>` untuk membuat baris, `<th>` untuk membuat sel header atau judul kolom, dan `<td>` untuk membuat sel data. Tabel juga dapat dibagi menggunakan `<thead>`, `<tbody>`, dan `<tfoot>`, serta dapat diberi judul menggunakan `<caption>`.
 
-**2. Apa perbedaan <th> dan <td>?**
-Jawaban: <th> adalah sel header yang secara default tampil tebal dan rata tengah serta bermakna sebagai judul kolom/baris. <td> adalah sel data biasa yang berisi isi tabel.
+**2. Apa perbedaan `<th>` dan `<td>`?**
+**Jawaban:** `<th>` digunakan sebagai sel header atau judul kolom/baris, sedangkan `<td>` digunakan untuk menampilkan data pada tabel.
 
-**3. Apa fungsi colspan pada tabel?**
-Jawaban: colspan menggabungkan beberapa kolom menjadi satu sel. Contoh colspan="2" membuat sel membentang selebar dua kolom, seperti pada baris "Rata-rata" di <tfoot> praktikum ini. Pasangannya adalah rowspan, yang menggabungkan beberapa baris menjadi satu sel.
+**3. Apa fungsi `colspan` pada tabel?**
+**Jawaban:** `colspan` digunakan untuk menggabungkan beberapa kolom menjadi satu sel. Contohnya `colspan="2"` berarti sel tersebut membentang sepanjang dua kolom, seperti pada bagian rata-rata di `<tfoot>`.
 
-**4. Apa fungsi <form> dalam HTML?**
-Jawaban: <form> adalah wadah untuk elemen input yang menerima data dari pengguna dan mengirimkannya ke server (atau ke proses lain) saat tombol submit ditekan. Atribut pentingnya adalah action (tujuan pengiriman data) dan method (GET atau POST). Data hanya ikut terkirim jika input memiliki atribut name.
+**4. Apa fungsi `<form>` dalam HTML?**
+**Jawaban:** `<form>` digunakan sebagai wadah untuk menerima data dari pengguna melalui berbagai elemen input, seperti teks, email, password, tanggal, radio button, checkbox, dan lainnya.
 
 **5. Apa perbedaan radio button dan checkbox?**
-Jawaban: Radio button memungkinkan satu pilihan dari satu grup (atribut name sama), sedangkan checkbox memungkinkan memilih satu, beberapa, atau tidak sama sekali. Pada praktikum ini radio button dipakai untuk jenis kelamin, sedangkan checkbox dipakai untuk keahlian (HTML, CSS, JavaScript).
+**Jawaban:** Radio button digunakan untuk memilih satu pilihan dari beberapa pilihan, sedangkan checkbox dapat digunakan untuk memilih satu atau beberapa pilihan. Pada praktikum ini, radio button digunakan untuk jenis kelamin, sedangkan checkbox digunakan untuk memilih keahlian seperti HTML, CSS, dan JavaScript.
 
-**6. Mengapa <label> sebaiknya terhubung dengan id input melalui atribut for?**
-Jawaban: Agar label terkait dengan input-nya: mengklik label langsung memfokuskan input (atau mencentang checkbox/radio), area klik jadi lebih luas, dan pembaca layar (screen reader) bisa membacakan label yang tepat sehingga lebih aksesibel.
+**6. Mengapa `<label>` sebaiknya terhubung dengan `id` input melalui atribut `for`?**
+**Jawaban:** Agar label terhubung dengan input yang sesuai. Dengan begitu, pengguna dapat mengklik label untuk memilih atau memfokuskan input tersebut, terutama pada radio button dan checkbox.
 
-**7. Apa perbedaan <textarea> dengan input type text?**
-Jawaban: <input type="text"> untuk teks satu baris pendek, sedangkan <textarea> untuk teks panjang multi-baris dengan ukuran diatur lewat rows dan cols. <textarea> punya tag penutup, sedangkan <input> tidak.
+**7. Apa perbedaan `<textarea>` dengan input type text?**
+**Jawaban:** `<input type="text">` digunakan untuk memasukkan teks dalam satu baris, sedangkan `<textarea>` digunakan untuk memasukkan teks yang lebih panjang dan dapat terdiri dari beberapa baris. Ukuran `<textarea>` dapat diatur menggunakan `rows` dan `cols`.
 
-**8. Apa fungsi semantic HTML seperti <header>, <nav>, <main>, <section>, <article>, <aside>, dan <footer>?**
-Jawaban: Elemen-elemen ini memberi makna pada struktur halaman: <header> kepala halaman/bagian, <nav> navigasi, <main> konten utama, <section> kelompok konten, <article> konten mandiri, <aside> konten pelengkap, dan <footer> kaki halaman. Berbeda dengan <div> dan <span> yang tidak memiliki makna, elemen semantic menjelaskan peran tiap bagian halaman. Manfaatnya: kode lebih mudah dibaca, lebih baik untuk SEO dan aksesibilitas, serta lebih mudah dipelihara.
+**8. Apa fungsi semantic HTML seperti `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, dan `<footer>`?**
+**Jawaban:** Elemen semantic digunakan untuk memberikan makna pada bagian-bagian halaman HTML. `<header>` untuk bagian kepala, `<nav>` untuk navigasi, `<main>` untuk konten utama, `<section>` untuk bagian konten, `<article>` untuk konten mandiri, `<aside>` untuk informasi tambahan, dan `<footer>` untuk bagian kaki halaman.
 
-**9. Apa fungsi required, min, max, minlength, maxlength, dan pattern?**
-Jawaban: required mewajibkan input diisi. min dan max menentukan nilai minimum dan maksimum (untuk input angka atau tanggal). minlength dan maxlength menentukan jumlah karakter minimum dan maksimum pada input teks. pattern membatasi isian dengan aturan tertentu (regular expression), misalnya pattern="[0-9]{8}" agar NIM hanya berisi 8 digit angka.
+**9. Apa fungsi `required`, `min`, `max`, `minlength`, `maxlength`, dan `pattern`?**
+**Jawaban:** `required` digunakan agar input wajib diisi. `min` dan `max` digunakan untuk menentukan nilai minimum dan maksimum. `minlength` dan `maxlength` digunakan untuk menentukan jumlah karakter minimum dan maksimum. `pattern` digunakan untuk menentukan pola tertentu pada input, misalnya `pattern="[0-9]{8}"` untuk membatasi NIM menjadi 8 digit angka.
 
-**10. Apa perbedaan elemen <audio> dan <video>?**
-Jawaban: <audio> menampilkan pemutar suara saja (tanpa gambar), sedangkan <video> menampilkan gambar bergerak beserta suara, dan ukurannya bisa diatur (width, height). Keduanya memakai atribut controls untuk menampilkan tombol putar dan <source> untuk menentukan file beserta formatnya, serta menyediakan teks cadangan jika browser tidak mendukung. Khusus <video>, ada atribut poster untuk gambar sampul. Atribut autoplay dan loop juga bisa dipakai pada keduanya.
+**10. Apa perbedaan elemen `<audio>` dan `<video>`?**
+**Jawaban:** `<audio>` digunakan untuk memutar suara, sedangkan `<video>` digunakan untuk menampilkan video. Keduanya dapat menggunakan atribut `controls` agar tombol kontrol ditampilkan dan `<source>` untuk menentukan file yang digunakan.

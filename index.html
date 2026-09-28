@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praktikum 2 - HTML Lanjutan</title>
+  <style>
+    body { font-family: 'Times New Roman', Times, serif; max-width: 900px; margin: 0 auto; padding: 16px; line-height: 1.5; }
+    nav a { margin-right: 12px; }
+    section { margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid #ccc; }
+    table { border-collapse: collapse; }
+    th, td { padding: 6px 12px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Praktikum 2: HTML Lanjutan</h1>
+  <p>Pemrograman Web</p>
+</header>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="biodata.html">Biodata (Proyek Mini)</a>
+  <a href="#tabel">Tabel</a>
+  <a href="#form">Form</a>
+  <a href="#validasi">Validasi</a>
+  <a href="#semantic">Semantic</a>
+  <a href="#multimedia">Multimedia</a>
+</nav>
+
+<main>
+
+  <section id="tabel">
+    <h2>1. Tabel Data Mahasiswa</h2>
+    <table border="1">
+      <tr><th>NIM</th><th>Nama</th><th>Program Studi</th></tr>
+      <tr><td>312510194</td><td>Febryvia</td><td>Teknik Informatika</td></tr>
+      <tr><td>31251002</td><td>Rion</td><td>Teknik Informatika</td></tr>
+      <tr><td>31251003</td><td>Laika</td><td>Teknik Informatika</td></tr>
+      <tr><td>31251004</td><td>Cilia</td><td>Sistem Informasi</td></tr>
+    </table>
+
+    <h2>2. Tabel dengan thead, tbody, dan tfoot</h2>
+    <table border="1">
+      <caption>Nilai Praktikum</caption>
+      <thead>
+        <tr><th>No</th><th>Nama</th><th>Nilai</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Febryvia</td><td>90</td></tr>
+        <tr><td>2</td><td>Rion</td><td>80</td></tr>
+        <tr><td>3</td><td>Laika</td><td>79</td></tr>
+        <tr><td>4</td><td>Cilia</td><td>85</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="2">Rata-rata</td><td>70.00</td></tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <section id="form">
+    <h2>3. Form Registrasi Mahasiswa</h2>
+    <form>
+      <label for="nama">Nama Lengkap</label><br>
+      <input type="text" id="nama" name="nama"><br><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" id="password" name="password"><br><br>
+
+      <label for="tanggal">Tanggal Lahir</label><br>
+      <input type="date" id="tanggal" name="tanggal"><br><br>
+
+      <h3>4. Radio Button dan Checkbox</h3>
+      <h4>Jenis Kelamin</h4>
+      <input type="radio" id="laki" name="jk" value="L">
+      <label for="laki">Laki-laki</label>
+      <input type="radio" id="perempuan" name="jk" value="P">
+      <label for="perempuan">Perempuan</label>
+
+      <h4>Keahlian</h4>
+      <input type="checkbox" id="html" name="skill" value="HTML">
+      <label for="html">HTML</label>
+      <input type="checkbox" id="css" name="skill" value="CSS">
+      <label for="css">CSS</label>
+      <input type="checkbox" id="js" name="skill" value="JavaScript">
+      <label for="js">JavaScript</label>
+
+      <h3>5. Select dan Textarea</h3>
+      <label for="prodi">Program Studi</label>
+      <select id="prodi" name="prodi">
+        <option value="">-- Pilih Prodi --</option>
+        <option value="ti">Teknik Informatika</option>
+        <option value="si">Sistem Informasi</option>
+      </select>
+      <br><br>
+
+      <label for="alamat">Alamat</label><br>
+      <textarea id="alamat" name="alamat" rows="5" cols="40"></textarea>
+      <br><br>
+
+      <label for="foto">Upload Foto</label><br>
+      <input type="file" id="foto" name="foto"><br><br>
+
+      <button type="submit">Daftar</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <section id="validasi">
+    <h2>6. Validasi Form Dasar</h2>
+    <p>Coba tekan tombol Kirim tanpa mengisi data, lalu amati pesan validasi dari browser.</p>
+    <form>
+      <label for="v-nama">Nama</label>
+      <input type="text" id="v-nama" name="nama" required minlength="3">
+      <br><br>
+
+      <label for="v-email">Email</label>
+      <input type="email" id="v-email" name="email" required>
+      <br><br>
+
+      <label for="v-umur">Umur</label>
+      <input type="number" id="v-umur" name="umur" min="17" max="60" required>
+      <br><br>
+
+      <label for="v-nim">NIM</label>
+      <input type="text" id="v-nim" name="nim" pattern="[0-9]{8}" maxlength="8" required title="Isi dengan 8 digit angka">
+      <br><br>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <section id="semantic">
+    <h2>7. Semantic HTML</h2>
+    <p>Halaman memakai elemen semantic seperti <code>header</code>, <code>nav</code>,
+       <code>main</code>, <code>section</code>, <code>article</code>, <code>aside</code>, dan <code>footer</code>.</p>
+
+    <article>
+      <h3>Praktikum HTML Lanjutan</h3>
+      <p>Mahasiswa mempelajari tabel, form, semantic HTML, multimedia, dan validasi.</p>
+    </article>
+
+    <aside>
+      <p><em></em></p>
+    </aside>
+  </section>
+
+  <section id="multimedia">
+    <h2>8. Multimedia</h2>
+
+    <h3>Audio</h3>
+    <audio controls>
+      <source src="media/audio.mp3" type="audio/mpeg">
+      Browser tidak mendukung audio.
+    </audio>
+
+    <h3>Video</h3>
+    <video controls width="480">
+      <source src="media/video.mp4" type="video/mp4">
+      Browser tidak mendukung video.
+    </video>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Teknik Informatika</p>
+</footer>
+
+</body>
+</html>
